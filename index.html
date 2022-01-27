@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onpaste-practice</title>
+</head>
+<body>
+    Try to copy sth and paste inside:
+    <input placeholder="Please paste sth here..." type="text" onpaste="myFunction()">
+    <p id="demo"></p>
+
+    <script>
+      function myFunction(){
+          document.getElementById("demo").innerHTML = 'Thanks for paste something';
+          document.getElementById("demo").style.backgroundColor = 'aqua';
+
+      }
+    </script>
+    
+</body>
+</html>
